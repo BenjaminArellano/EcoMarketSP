@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import Usuarios.model.Proveedor;
-import Usuarios.service.ProveedorService;
+import Productos.model.Proveedor;
+import Productos.service.ProveedorService;
+
 
 @RestController
 @RequestMapping("/api/proveedores")

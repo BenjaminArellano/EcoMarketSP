@@ -1,12 +1,12 @@
-package Productos.model;
+package Productos.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import Productos.repository.ProveedorRepository;
 import Productos.model.Proveedor;
+import Productos.repository.ProveedorRepository;
 
 @Service
 public class ProveedorService {

@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import Usuarios.model.Inventario;
-import Usuarios.service.InventarioService;
+import Productos.model.Inventario;
+import Productos.service.InventarioService;
+
 
 @RestController
 @RequestMapping("/api/inventarios")

@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import Usuarios.model.Resenia;
-import Usuarios.service.ReseniaService;
+import Productos.model.Resenia;
+import Productos.service.ReseniaService;
+
 
 @RestController
 @RequestMapping("/api/resenias")

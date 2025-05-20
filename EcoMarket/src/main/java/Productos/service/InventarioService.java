@@ -1,12 +1,12 @@
-package Productos.model;
+package Productos.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import Productos.repository.InventarioRepository;
 import Productos.model.Inventario;
+import Productos.repository.InventarioRepository;
 
 @Service
 public class InventarioService {
