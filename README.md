@@ -3,9 +3,6 @@ Trabajo de Fullstack desarrollado con SpringBoot y microservicios
 
 Falta por hacer
 🔹 Repository, Service y Controller para:
-📦 CARPETA productos:
-
-CLASES:  Producto, Proveedor, Inventario, Resenia
 
 📦 CARPETA pedidos:
 
