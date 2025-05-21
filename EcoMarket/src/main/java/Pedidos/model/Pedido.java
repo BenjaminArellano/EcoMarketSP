@@ -34,4 +34,8 @@ public class Pedido {
     @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
     private List<DetallePedido> detalle;
 
+    @ManyToOne
+    @JoinColumn(name = "cupon_id") 
+    private Cupon cupon;
+
 }
