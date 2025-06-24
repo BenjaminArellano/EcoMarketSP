@@ -1,7 +1,6 @@
 package com.example.EcoMarket.Usuarios.ControllerTest;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -39,8 +38,7 @@ public class PermisoControllerTest {
     @BeforeEach
     void setup() {
         Rol rol = mock(Rol.class);
-        Set<Rol> roles = new HashSet<>();
-        roles.add(rol);
+        List<Rol> roles = List.of(rol);
 
         permiso = new Permiso();
         permiso.setId(1L);

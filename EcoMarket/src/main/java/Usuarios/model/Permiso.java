@@ -1,6 +1,8 @@
 package Usuarios.model;
 
-import java.util.Set;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -22,6 +24,7 @@ public class Permiso {
     private String descripcion;
 
     @ManyToMany(mappedBy = "permisos")
-    private Set<Rol> roles;
+    @JsonBackReference
+    private List<Rol> roles;
 
 }

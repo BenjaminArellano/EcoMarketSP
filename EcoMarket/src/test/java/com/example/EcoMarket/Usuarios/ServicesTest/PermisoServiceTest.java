@@ -1,8 +1,6 @@
 package com.example.EcoMarket.Usuarios.ServicesTest;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -33,8 +31,7 @@ public class PermisoServiceTest {
     public void testFindAll() {
 
         Rol rol = mock(Rol.class);
-        Set<Rol> roles = new HashSet<>();
-        roles.add(rol);
+        List<Rol> roles = List.of(rol);
         
         when(permisoRepository.findAll()).thenReturn(List.of(
             new Permiso(1L, "READ_PRIVILEGES", "Permite leer datos", roles),
@@ -50,7 +47,7 @@ public class PermisoServiceTest {
     public void testFindById() {
         Long id = 1L;
         Rol rol = mock(Rol.class);
-        Set<Rol> roles = new HashSet<>();
+        List<Rol> roles = List.of(rol);
         roles.add(rol);
         
         Permiso permiso = new Permiso(id, "READ_PRIVILEGES", "Permite leer datos", roles);
@@ -64,7 +61,7 @@ public class PermisoServiceTest {
     @Test
     public void testSave() {
         Rol rol = mock(Rol.class);
-        Set<Rol> roles = new HashSet<>();
+        List<Rol> roles = List.of(rol);
         roles.add(rol);
         
         Permiso permiso = new Permiso(1L, "READ_PRIVILEGES", "Permite leer datos", roles);

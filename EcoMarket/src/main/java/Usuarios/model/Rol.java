@@ -1,6 +1,8 @@
 package Usuarios.model;
 
-import java.util.Set;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -22,7 +24,8 @@ public class Rol {
 
     @ManyToMany
     @JoinTable(name = "rol_permiso", joinColumns = @JoinColumn(name = "rol_id"), inverseJoinColumns = @JoinColumn(name = "permiso_id"))
-    private Set<Permiso> permisos;
+    @JsonManagedReference
+    private List<Permiso> permisos;
 
     private String nombre;
 }
